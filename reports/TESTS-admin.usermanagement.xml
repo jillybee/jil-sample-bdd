@@ -1,0 +1,50 @@
+<testsuite errors="1" failures="0" hostname="Jils-MBP.modem" name="admin.usermanagement.Admin_User_Management" skipped="1" tests="2" time="9.136418" timestamp="2019-08-26T00:16:50.610590"><testcase classname="admin.usermanagement.Admin_User_Management" name="Navigate_to_System_Users_page" status="failed" time="9.136418"><error message="Message: Element &lt;a id=&quot;menu_admin_UserManagement&quot; class=&quot;arrow&quot; href=&quot;#&quot;&gt; could not be scrolled into view&#10;" type="ElementNotInteractableException">
+<![CDATA[
+Failing step: And I click "User Management" menu ... failed in 0.034s
+Location: features/admin.usermanagement.feature:5
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.7/site-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features/steps/admin_steps.py", line 18, in step_impl
+    context.admin_page.click_element(*AdminPageLocator.USER_MANAGEMENT_MENU)
+  File "/Users/jilvelasquez/Development/pycharm/orangehrm-bdd/features/pages/base_page.py", line 24, in click_element
+    self.driver.find_element(*locator).click()
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: Element <a id="menu_admin_UserManagement" class="arrow" href="#"> could not be scrolled into view
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Navigate_to_System_Users_page
+    Given I login to the application ... passed in 6.927s
+    When I click "Admin" menu ... passed in 2.176s
+    And I click "User Management" menu ... failed in 0.034s
+    Then "SYSTEM_USERS_PAGE" page is displayed ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="admin.usermanagement.Admin_User_Management" name="Navigate_to_System_Users_page" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @wip
+  Scenario: Navigate_to_System_Users_page
+    Given "System Users" page is displayed ... skipped in 0.000s
+    When I click "Add" button ... skipped in 0.000s
+    Then "Add User" page is displayed ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

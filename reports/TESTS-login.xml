@@ -1,0 +1,13 @@
+<testsuite errors="0" failures="0" hostname="Jils-MBP.modem" name="login.Login as Admin" skipped="1" tests="1" time="0.0" timestamp="2019-08-26T00:16:50.612792"><testcase classname="login.Login as Admin" name="Open OrangeHRM admin homepage" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @wip
+  Scenario: Open OrangeHRM admin homepage
+    Given I login to the application ... skipped in 0.000s
+    Then I am taken to the homepage ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

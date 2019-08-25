@@ -1,0 +1,8 @@
+driver:
+  firefox-driver: /Users/jilvelasquez/Development/pycharm/orangehrm-bdd/drivers/geckodriver
+
+ppte:
+  url1: https://pypi.python.org/pypi
+  url: https://opensource-demo.orangehrmlive.com/
+  username: Admin
+  password: admin123
